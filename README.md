@@ -5,4 +5,8 @@
 3. IT IS TESTED ON LINUX ONLY
 
 
->npm install async-await-fs
+## Installation
+
+```
+$ npm install  async-await-fs
+```
