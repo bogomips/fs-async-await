@@ -1,0 +1,1 @@
+Remember you need to transpile the code, node is going to natively support async/await, in the meanwhile babel is a great option
