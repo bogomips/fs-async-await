@@ -1,8 +1,9 @@
 {
-  "name": "afs",
+  "name": "async-await-fs",
   "version": "0.0.1",
+  "description": "Some confortable fs methods for nodejs using async/await.",
   "dependencies": {
-    "fs-promise": "^1.0.0",
+    "fs-promise": "^1.0.0"
   },
   "devDependencies": {
   }
