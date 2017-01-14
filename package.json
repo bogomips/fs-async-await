@@ -3,9 +3,7 @@
   "version": "0.0.1",
   "description": "Some confortable fs methods for nodejs using async/await.",
   "dependencies": {
-    "fs-promise": "^1.0.0"
+    "es6-promisify": "^5.0.0"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
-

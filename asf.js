@@ -1,7 +1,12 @@
 
 //import _ from 'lodash';
 import path from 'path';
-import fs from 'fs-promise';
+//import fs from 'fs-';
+import promisify from 'es6-promisify';
+import fs from 'fs';
+
+const mkdir = promisify(fs.mkdir);
+const unlink = promisify(fs.unlink);
 
 let afs={};
 
@@ -13,7 +18,7 @@ afs.mkdir = async (dir_path,mode,dir_root) => {
 			let fs_STAT = await fs.stat(base_dir);						
 		}
 		catch(e) {					
-			await fs.mkdir(base_dir);
+			await mkdir(base_dir);
 			//console.log("ho creato ",base_dir);
 		}
 
@@ -57,7 +62,7 @@ afs.copy = async (src,dst) => {
 
 } 
 
-afs.delete = async (path) => fs.unlink(path);
+afs.delete = async (path) => unlink(path);
 
 
 
